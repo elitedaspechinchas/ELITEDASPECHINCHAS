@@ -14,7 +14,7 @@ interface StorePageProps {
 
 export async function generateMetadata({ params }: StorePageProps): Promise<Metadata> {
   const storeName = formatSlugToName(params.slug);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://elitedaspechinchas.com.br';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.elitedaspechinchas.com.br';
   const canonicalUrl = `${siteUrl}/loja/${params.slug}`;
   const title = `Promoções e Cupons na ${storeName} — Elite das Pechinchas`;
   const description = `Confira as melhores ofertas e cupons verificados para economizar em suas compras na ${storeName}.`;
@@ -63,19 +63,19 @@ export default function StorePage({ params }: StorePageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Início',
-        item: 'https://elitedaspechinchas.com.br/',
+        item: 'https://www.elitedaspechinchas.com.br/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Lojas',
-        item: 'https://elitedaspechinchas.com.br/',
+        item: 'https://www.elitedaspechinchas.com.br/',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: storeName,
-        item: `https://elitedaspechinchas.com.br/loja/${params.slug}`,
+        item: `https://www.elitedaspechinchas.com.br/loja/${params.slug}`,
       },
     ],
   };

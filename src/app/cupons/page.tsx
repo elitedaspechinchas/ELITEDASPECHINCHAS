@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import CuponsClient from './CuponsClient';
 import { BreadcrumbJsonLd } from '@/components/seo/JsonLd';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://elitedaspechinchas.com.br';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.elitedaspechinchas.com.br';
 
 export const metadata: Metadata = {
   title: 'Cupons de Desconto e Códigos Promocionais Testados — Elite das Pechinchas',

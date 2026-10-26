@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: OfferPageProps): Promise<Meta
   const title = `${discountText}${offer.title} por ${formatBRL(offer.price_current)} na ${offer.store} — Elite das Pechinchas`;
   const description = `Compre ${offer.title} por apenas ${formatBRL(offer.price_current)} na ${offer.store}. Desconto verificado com economia real na Elite das Pechinchas.`;
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://elitedaspechinchas.com.br';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.elitedaspechinchas.com.br';
   const canonicalUrl = `${siteUrl}/oferta/${params.id}`;
 
   return {
@@ -116,19 +116,19 @@ export default async function OfferDetailPage({ params }: OfferPageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Início',
-        item: 'https://elitedaspechinchas.com.br/',
+        item: 'https://www.elitedaspechinchas.com.br/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: offer.category.replace(/-/g, ' '),
-        item: `https://elitedaspechinchas.com.br/categoria/${offer.category}`,
+        item: `https://www.elitedaspechinchas.com.br/categoria/${offer.category}`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: offer.title,
-        item: `https://elitedaspechinchas.com.br/oferta/${offer.id}`,
+        item: `https://www.elitedaspechinchas.com.br/oferta/${offer.id}`,
       },
     ],
   };

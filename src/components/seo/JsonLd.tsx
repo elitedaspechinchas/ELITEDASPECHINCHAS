@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://elitedaspechinchas.com.br';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.elitedaspechinchas.com.br';
 
 /**
  * Componente para inserção de dados estruturados JSON-LD Schema.org de Organização (Home).
@@ -11,7 +11,7 @@ export function OrganizationJsonLd() {
     '@type': 'Organization',
     name: 'Elite das Pechinchas',
     url: BASE_URL,
-    logo: `${BASE_URL}/favicon.svg`,
+    logo: `${BASE_URL}/logo.png`,
     description: 'A melhor curadoria de promoções, cupons de desconto e pechinchas da internet brasileira.',
     sameAs: [
       'https://instagram.com/elitedaspechinchas',

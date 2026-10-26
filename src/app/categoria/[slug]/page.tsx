@@ -13,7 +13,7 @@ interface CategoryPageProps {
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const categoryName = formatSlugToName(params.slug);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://elitedaspechinchas.com.br';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.elitedaspechinchas.com.br';
   const canonicalUrl = `${siteUrl}/categoria/${params.slug}`;
   const title = `Ofertas de ${categoryName} com Desconto — Elite das Pechinchas`;
   const description = `As melhores promoções e cupons de desconto para ${categoryName}. Economize nas principais lojas com a Elite das Pechinchas.`;
@@ -63,19 +63,19 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Início',
-        item: 'https://elitedaspechinchas.com.br/',
+        item: 'https://www.elitedaspechinchas.com.br/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Categorias',
-        item: 'https://elitedaspechinchas.com.br/',
+        item: 'https://www.elitedaspechinchas.com.br/',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: categoryName,
-        item: `https://elitedaspechinchas.com.br/categoria/${params.slug}`,
+        item: `https://www.elitedaspechinchas.com.br/categoria/${params.slug}`,
       },
     ],
   };

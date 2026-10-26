@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getOffers, getCategories, getStores } from '@/lib/api';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://elitedaspechinchas.com.br';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.elitedaspechinchas.com.br';
 
   // Rotas estáticas principais
   const routes: MetadataRoute.Sitemap = [

@@ -71,7 +71,7 @@ app.add_middleware(GZipMiddleware, minimum_size=1000)
 # ==========================================
 # Configuração de CORS Segura
 # ==========================================
-raw_cors = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000")
+raw_cors = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000,https://www.elitedaspechinchas.com.br,https://elitedaspechinchas.com.br")
 CORS_ORIGINS = [origin.strip() for origin in raw_cors.split(",") if origin.strip()]
 CORS_ORIGIN_REGEX = os.getenv("CORS_ORIGIN_REGEX")
 
