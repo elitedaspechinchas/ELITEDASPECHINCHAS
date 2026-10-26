@@ -24,7 +24,7 @@ Guia completo para colocar o projeto em produção.
 ## 1. Frontend — Vercel
 
 ### 1.1 Setup
-1. Acesse [vercel.com](https://vercel.com) e faça login com sua conta GitHub.
+1. Acesse [vercel.com](https://vercel.com) e faça login com sua conta (E-mail operacional: `elitedaspechincha@gmail.com`).
 2. Clique em **"New Project"** → Importe `Hugobleme/ELITEDASPECHINCHAS`.
 3. Framework: **Next.js** (detecção automática).
 4. Root Directory: `.` (padrão).
@@ -36,17 +36,17 @@ Configure no painel da Vercel → Settings → Environment Variables:
 |---|---|---|
 | `NEXT_PUBLIC_API_URL` | `https://elitedaspechinchas-production.up.railway.app` | Production, Preview |
 | `NEXT_PUBLIC_USE_MOCK` | `false` | Production, Preview |
-| `NEXT_PUBLIC_SITE_URL` | `https://elitedaspechinchas.vercel.app` | Production |
+| `NEXT_PUBLIC_SITE_URL` | `https://www.elitedaspechinchas.com.br` | Production |
 | `NEXT_PUBLIC_GA_ID` | `G-XXXXXXXXXX` (opcional) | Production |
 
 ### 1.3 Deploy
 - Automático em cada push para `main`.
 - Previews automáticos em PRs.
 
-### 1.4 Domínio Customizado (Opcional)
-1. Vercel → Settings → Domains → Add Domain.
-2. Adicione `elitedaspechinchas.com.br` (ou seu domínio).
-3. Configure DNS conforme instruções da Vercel (CNAME ou A records).
+### 1.4 Domínio Oficial Configurado
+1. Vercel → Settings → Domains.
+2. Domínio principal: `www.elitedaspechinchas.com.br` (redirecionando de `elitedaspechinchas.com.br`).
+3. DNS configurado com SSL automático.
 
 ---
 
@@ -73,10 +73,10 @@ No serviço do backend (Settings → Variables):
 | `ENVIRONMENT` | `production` |
 | `JWT_SECRET` | Gere com: `openssl rand -hex 32` |
 | `SECRET_KEY` | Gere com: `openssl rand -hex 32` |
-| `CORS_ORIGINS` | `https://SEU-APP.vercel.app,https://elitedaspechinchas.com.br` |
+| `CORS_ORIGINS` | `https://www.elitedaspechinchas.com.br,https://elitedaspechinchas.com.br` |
 | `VAPID_PUBLIC_KEY` | Chave pública VAPID para Web Push |
 | `VAPID_PRIVATE_KEY` | Chave privada VAPID para Web Push |
-| `VAPID_CLAIMS_EMAIL` | Email de contato do remetente Push (ex: `admin@elitedaspechinchas.com.br`) |
+| `VAPID_CLAIMS_EMAIL` | Email de contato do remetente Push (`elitedaspechincha@gmail.com`) |
 | `AMAZON_TAG` | Sua tag Amazon Associates (ex: `elitedaspechi-20`) |
 | `MERCADOLIVRE_TAG` | Sua tag Mercado Livre |
 | `MAGALU_TAG` | Sua tag Magazine Luiza |

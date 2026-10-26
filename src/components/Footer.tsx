@@ -64,10 +64,20 @@ export default function Footer() {
             <p className="max-w-md text-xs leading-relaxed text-slate-500 dark:text-zinc-400">
               O agregador definitivo de promoções e cupons da internet brasileira. Monitoramos continuamente os maiores e-commerces para garantir que você só pague o menor preço histórico em produtos verificados.
             </p>
-            <div className="flex items-center gap-2 pt-1 text-xs font-semibold text-slate-400">
-              <span>Feito com</span>
-              <Heart className="h-3.5 w-3.5 fill-red-500 text-red-500 animate-pulse" />
-              <span>para a comunidade de caçadores de ofertas</span>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 pt-1 text-xs font-semibold text-slate-400">
+              <div className="flex items-center gap-1.5">
+                <span>Feito com</span>
+                <Heart className="h-3.5 w-3.5 fill-red-500 text-red-500 animate-pulse" />
+                <span>para a comunidade</span>
+              </div>
+              <span className="hidden sm:inline text-slate-300 dark:text-zinc-700">•</span>
+              <a
+                href="mailto:elitedaspechincha@gmail.com"
+                className="text-amber-500 hover:text-amber-400 dark:text-amber-400 dark:hover:text-amber-300 transition-colors"
+                title="Contato e Parcerias"
+              >
+                elitedaspechincha@gmail.com
+              </a>
             </div>
           </div>
 

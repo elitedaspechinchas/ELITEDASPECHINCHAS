@@ -332,8 +332,8 @@ def seed_database(session: Optional[Session] = None):
         # 7. Usuário Administrador (users)
         # ======================================================================
         print("\n👑 7. Populando Usuário Administrador Padrão...")
-        admin_email = "admin@elitedaspechinchas.com.br"
-        admin_user = db.query(User).filter(User.email == admin_email).first()
+        admin_email = os.getenv("ADMIN_EMAIL", "elitedaspechincha@gmail.com")
+        admin_user = db.query(User).filter(User.email.in_([admin_email, "admin@elitedaspechinchas.com.br"])).first()
         if not admin_user:
             admin_user = User(
                 email=admin_email,

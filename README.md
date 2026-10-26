@@ -380,7 +380,8 @@ TEST_POSTGRES_URL=postgresql://postgres:postgres@localhost:5432/elitedaspechinch
 
 O ecossistema está **100% online e operando em produção**:
 
-- 🌐 **Frontend (Vercel)**: [https://elitedaspechinchas.vercel.app](https://elitedaspechinchas.vercel.app)
+- 🌐 **Frontend (Domínio Oficial)**: [https://www.elitedaspechinchas.com.br](https://www.elitedaspechinchas.com.br)
+- ✉️ **E-mail de Operação / Contato**: `elitedaspechincha@gmail.com`
 - ⚙️ **Backend API (Railway)**: [https://elitedaspechinchas-production.up.railway.app](https://elitedaspechinchas-production.up.railway.app)
 - 📖 **Documentação Swagger**: [https://elitedaspechinchas-production.up.railway.app/docs](https://elitedaspechinchas-production.up.railway.app/docs)
 - 🐘 **PostgreSQL 16 & Redis 7**: Gerenciados e conectados na Railway

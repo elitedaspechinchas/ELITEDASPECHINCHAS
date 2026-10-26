@@ -63,7 +63,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           const authUser: AdminUser = data.user || {
             id: '1',
             name: username,
-            email: `${username}@elitedaspechinchas.com.br`,
+            email: username.includes('@') ? username : 'elitedaspechincha@gmail.com',
             role: 'admin',
           };
 
@@ -92,7 +92,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const demoUser: AdminUser = {
         id: 'usr_admin_01',
         name: username,
-        email: `${username}@elitedaspechinchas.com.br`,
+        email: username.includes('@') ? username : 'elitedaspechincha@gmail.com',
         role: 'admin',
       };
 

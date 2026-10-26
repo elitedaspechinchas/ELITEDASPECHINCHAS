@@ -141,7 +141,7 @@ export default function AdminSidebar() {
             <div className="text-xs font-bold text-slate-900 dark:text-white truncate">
               {user?.name || 'Administrador'}
             </div>
-            <div className="text-[11px] text-slate-400 truncate">{user?.email || 'admin@elitedaspechinchas.com.br'}</div>
+            <div className="text-[11px] text-slate-400 truncate">{user?.email || 'elitedaspechincha@gmail.com'}</div>
           </div>
 
           <button
